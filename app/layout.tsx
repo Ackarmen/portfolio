@@ -25,8 +25,9 @@ const bespokeStencil = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sofiane Lyafori | Personal Portfolio",
-  description: "Front-End developer React JS (Next JS) | TypeScript",
+  title: "Sofiane Lyafori - Frontend developer | Personal Portfolio",
+  description:
+    "Explore my personal portfolio, showcasing a Frontend Developer specializing in React JS (Next.js) and TypeScript. Discover projects and skills in modern web development.",
 };
 
 export default function RootLayout({
