@@ -39,7 +39,7 @@ export default function Intro() {
           >
             <Link
               href="#contact"
-              className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+              className="group bg-gray-900 text-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
               onClick={() => {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
@@ -49,8 +49,10 @@ export default function Intro() {
               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
             <a
-              href="/CV.pdf"
-              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="group bg-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             >
               Download CV{" "}
               <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -83,7 +85,7 @@ export default function Intro() {
                 alt="portrait"
                 priority
                 quality={95}
-                className=" w-60 w- h-60 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                className="w-60 w- h-60 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
               />
             </motion.div>
             <motion.span

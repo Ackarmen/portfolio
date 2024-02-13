@@ -39,6 +39,7 @@ export const experiencesData = [
     location: "Dijon, France",
     description:
       "Obtained a BTS in Industrial Maintenance, specializing in electrical systems. Developed skills in troubleshooting and repairing industrial equipment.",
+    verifyUrl: "",
     icon: React.createElement(LuGraduationCap),
     date: "2016",
   },
@@ -48,6 +49,7 @@ export const experiencesData = [
     location: "Nîmes, France",
     description:
       "Completed the Meta Front-End Developer bootcamp on Coursera, gaining practical skills in front-end development and mastering industry-standard technologies.",
+    verifyUrl: "https://www.coursera.org/verify/professional-cert/5JKAPUTN7T5L",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - 2024",
   },
@@ -57,6 +59,8 @@ export const experiencesData = [
     location: "Nîmes, France",
     description:
       "Currently focusing on personal projects and actively seeking opportunities to apply and further develop my skills in web development.",
+    verifyUrl: "",
+
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
@@ -67,7 +71,7 @@ export const projectsData = [
     id: 1,
     title: "The Game Lib",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Game search platform. All data is generated from an API. The application features sorting, filtering, infinite scrolling, and routing.",
     code: "https://github.com/Ackarmen/THEgame",
     url: "https://thegamelib.vercel.app/",
     tags: ["Vite.js", "React", "TypeScript", "React router", "Chakra UI"],
@@ -77,20 +81,27 @@ export const projectsData = [
     id: 2,
     title: "Ai-Summarizer",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A public web app based on GPT-4. AI-generated summarization of an article based on its URL.",
     code: "https://github.com/Ackarmen/AI-Articles-Summarize",
     url: "https://ai-article-app.vercel.app/",
-    tags: ["Vite.js", "React", "Redux", "Tailwind"],
+    tags: ["Vite.js", "React", "Redux", "RapidApi", "Tailwind"],
     imageUrl: aiSummarizerImg,
   },
   {
     id: 3,
     title: "Motors Hub",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Car rental platform. The application features multiple filters and includes modal implementation to display detailed information for each car.",
     code: "https://github.com/Ackarmen/motorsHub",
     url: "https://motorshub.vercel.app/",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Headless UI"],
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "RapidApi",
+      "Tailwind",
+      "Headless UI",
+    ],
     imageUrl: motorsHubImg,
   },
 ] as const;
