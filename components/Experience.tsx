@@ -48,14 +48,14 @@ export default function Experience() {
                 }}
               >
                 <h3 className="font-semibold capitalize">
-                  {exp.title} -{" "}
+                  {exp.title}{" "}
                   {exp.verifyUrl ? (
                     <Link
-                      className="underline underline-offset-2"
+                      className="underline underline-offset-2 font-medium"
                       target="_blank"
                       href={exp.verifyUrl}
                     >
-                      View my certification
+                      (View my certification)
                     </Link>
                   ) : null}
                 </h3>
