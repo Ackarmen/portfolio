@@ -1,33 +1,33 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ThemeSwitch from "@/components/ThemeSwitch";
-import ActiveSectionContextProvider from "@/context/ActiveSectionContextProvider";
-import ThemeContextProvider from "@/context/ThemeContextProvider";
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Toaster } from "react-hot-toast";
-import "./globals.css";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import ThemeSwitch from '@/components/ThemeSwitch';
+import ActiveSectionContextProvider from '@/context/ActiveSectionContextProvider';
+import ThemeContextProvider from '@/context/ThemeContextProvider';
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import { Toaster } from 'react-hot-toast';
+import './globals.css';
 
 const supreme = localFont({
   src: [
-    { path: "../assets/fonts/Supreme/Fonts/WEB/fonts/Supreme-Medium.woff2" },
+    { path: '../assets/fonts/Supreme/Fonts/WEB/fonts/Supreme-Medium.woff2' },
   ],
-  variable: "--font-supreme",
+  variable: '--font-supreme',
 });
 
 const bespokeStencil = localFont({
   src: [
     {
-      path: "../assets/fonts/BespokeStencil/Fonts/WEB/fonts/BespokeStencil-Medium.woff2",
+      path: '../assets/fonts/BespokeStencil/Fonts/WEB/fonts/BespokeStencil-Medium.woff2',
     },
   ],
-  variable: "--font-bespokeStencil",
+  variable: '--font-bespokeStencil',
 });
 
 export const metadata: Metadata = {
-  title: "Sofiane Lyafori - Frontend developer | Personal Portfolio",
+  title: 'Sofiane Lyafori - Frontend developer | Personal Portfolio',
   description:
-    "Explore my personal portfolio, showcasing a Frontend Developer specializing in React JS (Next.js) and TypeScript. Discover projects and skills in modern web development.",
+    'Explore my personal portfolio, showcasing a Frontend Developer specializing in React JS (Next.js) and TypeScript. Discover projects and skills in modern web development.',
 };
 
 export default function RootLayout({
@@ -40,11 +40,8 @@ export default function RootLayout({
       lang="en"
       className={`${supreme.variable} ${bespokeStencil.variable} !scroll-smooth`}
     >
-      <body className="font-supreme bg-gray-50 text-gray-950  relative pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90">
-        <div className="absolute w-full h-[275rem] bg-[radial-gradient(#78d6bd_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:bg-[radial-gradient(#2f403b_1px,transparent_1px)] -z-10"></div>
-
-        <div className="bg-[#ffc7c7] absolute top-[-6rem] -z-10 right-1 h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]  sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#d6d0ff] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem]  sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+      <body className="font-supreme bg-gray-50 text-gray-950 relative pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90">
+        <div className="absolute w-full h-[275rem] bg-[radial-gradient(#5eead4_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_97%,transparent_100%)] dark:bg-[radial-gradient(#134e4a_1px,transparent_1px)] -z-10"></div>
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
