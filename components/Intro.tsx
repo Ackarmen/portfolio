@@ -6,7 +6,7 @@ import picture from '@/public/picture.png';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/Bs';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 
