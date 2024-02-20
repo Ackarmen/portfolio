@@ -37,6 +37,7 @@ export default function Intro() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type: 'tween', duration: 0.2 }}
+                whileHover={{ rotateZ: 360 }}
               >
                 <Image
                   src={picture}
