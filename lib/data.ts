@@ -59,6 +59,7 @@ export const experiencesData = [
     location: 'Nîmes, France',
     description:
       'Learning about the environmental and social impact of digital technology. Understanding key concepts of eco-design and how to adopt sustainable and responsible practices in technological and digital work contexts.',
+    verifyUrl: '',
     icon: React.createElement(LuGraduationCap),
     date: '2024',
   },
@@ -69,7 +70,6 @@ export const experiencesData = [
     description:
       'Currently focusing on personal projects and actively seeking opportunities to apply and further develop my skills in web development.',
     verifyUrl: '',
-
     icon: React.createElement(FaReact),
     date: '2024 - present',
   },
