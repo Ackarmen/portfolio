@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { sendEmail } from "@/action/sendEmail";
-import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
-import toast from "react-hot-toast";
-import SectionHeading from "./SectionHeading";
-import SubmitBtn from "./SubmitBtn";
+import { sendEmail } from '@/action/sendEmail';
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
+import toast from 'react-hot-toast';
+import SectionHeading from './SectionHeading';
+import SubmitBtn from './SubmitBtn';
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact", 0.4);
+  const { ref } = useSectionInView('Contact', 0.4);
 
   return (
     <motion.section
@@ -23,13 +23,13 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 dark:text-white/80">
-        Please contact me directly at{" "}
+        Please contact me directly at{' '}
         <a
           href="mailto:lyaforis@gmail.com"
           className="underline underline-offset-2 decoration-[#d6d0ff]"
         >
           lyaforis@gmail.com
-        </a>{" "}
+        </a>{' '}
         or through this form.
       </p>
 
@@ -43,7 +43,7 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email send successfully !");
+          toast.success('Email send successfully !');
         }}
       >
         <input

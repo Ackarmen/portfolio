@@ -74,7 +74,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+            className="group bg-gray-900 text-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());
@@ -87,7 +87,7 @@ export default function Intro() {
             href="/CV.pdf"
             target="_blank"
             rel="noreferrer"
-            className="group bg-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="group bg-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           >
             Download CV{' '}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -95,14 +95,14 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/lyaforis"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
             <BsLinkedin />
           </a>
           <a
             href="https://github.com/Ackarmen"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
             <FaGithubSquare />
           </a>
