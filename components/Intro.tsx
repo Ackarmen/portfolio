@@ -44,6 +44,8 @@ export default function Intro() {
                   alt="portrait"
                   priority
                   quality={95}
+                  width={200}
+                  height={200}
                   className="w-60 h-60 rounded-full object-contain border-[0.35rem] border-white shadow-xl bg-black"
                 />
               </motion.div>

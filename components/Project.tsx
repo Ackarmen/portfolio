@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { projectsData } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { useRef } from "react";
+import { projectsData } from '@/lib/data';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRef } from 'react';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -20,7 +20,7 @@ export default function Project({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ['0 1', '1.33 1'],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
@@ -40,14 +40,14 @@ export default function Project({
           </p>
           <div className="flex justify-evenly items-center h-full">
             <Link
-              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
               href={code}
               target="_blank"
             >
               Code
             </Link>
             <Link
-              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
               href={url}
               target="_blank"
             >
@@ -69,6 +69,8 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
+          width={400}
+          height={400}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
         />
       </section>
