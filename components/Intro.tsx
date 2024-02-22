@@ -97,16 +97,16 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/lyaforis"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 dark:hover:text-neutral-200 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
-            <BsLinkedin />
+            <BsLinkedin title="linkedin icon" />
           </a>
           <a
             href="https://github.com/Ackarmen"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.3rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 dark:hover:text-neutral-200 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           >
-            <FaGithubSquare />
+            <FaGithubSquare title="github icon" />
           </a>
         </motion.div>
       </div>

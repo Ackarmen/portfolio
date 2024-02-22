@@ -32,22 +32,22 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-11 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 max-w-[42rem] border-2 border-gray-200 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-11 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-5 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 mb-3 sm:mb-0 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 mb-3 sm:mb-0 leading-relaxed text-slate-700 dark:text-white/70">
             {description}
           </p>
           <div className="flex justify-evenly items-center h-full">
             <Link
-              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+              className="text-sm bg-gray-800 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
               href={code}
               target="_blank"
             >
               Code
             </Link>
             <Link
-              className="text-sm bg-gray-900 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+              className="text-sm bg-gray-800 text-white px-4 py-1 rounded-xl outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
               href={url}
               target="_blank"
             >
