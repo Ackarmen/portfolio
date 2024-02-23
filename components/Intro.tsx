@@ -27,9 +27,12 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            Hi, i'm Sofiane, a creative and passionate Frontend React (NextJs)
-            developer. I simply enjoy being in front of my computer, solving
-            problems, and giving my best to provide the best user experience.
+            Hi, i'm Sofiane, a creative and passionate Frontend{' '}
+            <span className="underline underline-offset-4 decoration-yellow-400">
+              React (NextJs) developer.
+            </span>{' '}
+            I simply enjoy being in front of my computer, solving problems, and
+            giving my best to provide the best user experience.
           </motion.h1>
           <div className="flex items-center justify-center">
             <div className="relative">
@@ -46,7 +49,7 @@ export default function Intro() {
                   quality={95}
                   width={200}
                   height={200}
-                  className="w-60 h-60 rounded-full object-contain border-[0.35rem] border-white shadow-xl bg-black"
+                  className="w-60 h-60 rounded-full object-contain border-[0.35rem] border-yellow-400 shadow-xl bg-black"
                 />
               </motion.div>
               <motion.span
@@ -76,7 +79,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+            className="group bg-yellow-400 text-black px-4 py-3 flex items-center gap-2 rounded-xl borderBlack outline-none focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 transition cursor-pointer"
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());
@@ -89,7 +92,7 @@ export default function Intro() {
             href="/CV.pdf"
             target="_blank"
             rel="noreferrer"
-            className="group bg-white px-4 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="group bg-white px-4 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           >
             Download CV{' '}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />

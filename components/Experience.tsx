@@ -18,7 +18,7 @@ export default function Experience() {
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experiences</SectionHeading>
+      <SectionHeading>03. My experiences</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((exp) => {
           return (
@@ -29,15 +29,12 @@ export default function Experience() {
                   background:
                     theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
                   boxShadow: 'none',
-                  border: '1px solid rgba(0, 0, 0, 0.05)',
+                  border: '1px solid #facc15',
                   textAlign: 'left',
                   padding: '1.3rem 2rem',
                 }}
                 contentArrowStyle={{
-                  borderRight:
-                    theme === 'light'
-                      ? '0.4rem solid #9ca3af'
-                      : '0.4rem solid rgba(255, 255, 255, 0.5)',
+                  borderRight: '0.4rem solid #facc15',
                 }}
                 date={exp.date}
                 icon={exp.icon}
@@ -45,6 +42,8 @@ export default function Experience() {
                   background:
                     theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
                   fontSize: '1.5rem',
+                  color: '#facc15',
+                  border: '4px solid #facc15',
                 }}
               >
                 <h3 className="font-semibold capitalize">

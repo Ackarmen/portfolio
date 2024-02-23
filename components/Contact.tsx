@@ -20,13 +20,13 @@ export default function Contact() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>04. Contact me</SectionHeading>
 
       <p className="text-gray-700 dark:text-white/80">
         Please contact me directly at{' '}
         <a
           href="mailto:lyaforis@gmail.com"
-          className="underline underline-offset-2 decoration-[#d6d0ff]"
+          className="underline underline-offset-4 decoration-yellow-400"
         >
           lyaforis@gmail.com
         </a>{' '}

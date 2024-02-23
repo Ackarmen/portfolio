@@ -71,7 +71,7 @@ export const experiencesData = [
       'Currently focusing on personal projects and actively seeking opportunities to apply and further develop my skills in web development.',
     verifyUrl: '',
     icon: React.createElement(FaReact),
-    date: '2024 - present',
+    date: '2024 - Present',
   },
 ] as const;
 
@@ -83,17 +83,17 @@ export const projectsData = [
       'Game search platform. All data is generated from an API. The application features sorting, filtering, infinite scrolling, and routing.',
     code: 'https://github.com/Ackarmen/THEgame',
     url: 'https://thegamelib.vercel.app/',
-    tags: ['Vite.js', 'React', 'TypeScript', 'React router', 'Chakra UI'],
+    tags: ['Vite.js', 'React', 'TypeScript', 'React router'],
     imageUrl: theGameLibImg,
   },
   {
     id: 2,
     title: 'Ai-Summarizer',
     description:
-      'A public web app based on GPT-4. AI-generated summarization of an article based on its URL.',
+      'A public web application utilizing GPT-4 for AI-generated article summarization based on URL input. Once the URL is entered, it is saved and displayed below the search bar.',
     code: 'https://github.com/Ackarmen/AI-Articles-Summarize',
     url: 'https://ai-article-app.vercel.app/',
-    tags: ['Vite.js', 'React', 'Redux', 'RapidApi', 'Tailwind'],
+    tags: ['Vite.js', 'React', 'Redux Toolkit', 'Rapid Api', 'Tailwind'],
     imageUrl: aiSummarizerImg,
   },
   {
@@ -103,14 +103,7 @@ export const projectsData = [
       'Car rental platform. The application features multiple filters and includes modal implementation to display detailed information for each car.',
     code: 'https://github.com/Ackarmen/motorsHub',
     url: 'https://motorshub.vercel.app/',
-    tags: [
-      'React',
-      'Next.js',
-      'TypeScript',
-      'RapidApi',
-      'Tailwind',
-      'Headless UI',
-    ],
+    tags: ['React', 'Next.js', 'TypeScript', 'Rapid Api', 'Tailwind'],
     imageUrl: motorsHubImg,
   },
 ] as const;
