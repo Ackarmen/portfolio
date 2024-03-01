@@ -27,7 +27,7 @@ export default function Experience() {
                 visible={inView}
                 contentStyle={{
                   background:
-                    theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
+                    theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.1)',
                   boxShadow: 'none',
                   border: '1px solid #facc15',
                   textAlign: 'left',
