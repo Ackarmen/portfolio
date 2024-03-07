@@ -1,4 +1,5 @@
 import aiSummarizerImg from '@/public/aiSummarizer.png';
+import evogymImg from '@/public/evogymImg.png';
 import motorsHubImg from '@/public/motorsHub.png';
 import theGameLibImg from '@/public/theGameLib.png';
 import React from 'react';
@@ -105,6 +106,16 @@ export const projectsData = [
     url: 'https://motorshub.vercel.app/',
     tags: ['React', 'Next.js', 'TypeScript', 'Rapid Api', 'Tailwind'],
     imageUrl: motorsHubImg,
+  },
+  {
+    id: 4,
+    title: 'EVOGYM',
+    description:
+      'EVOGYM is a revolutionary fitness platform designed to redefine the gym experience. With state-of-the-art facilities and a team of dedicated professionals.',
+    code: 'https://github.com/Ackarmen/gym-app',
+    url: 'https://gym-app-lake.vercel.app/',
+    tags: ['Vite.js', 'React', 'TypeScript', 'Tailwind'],
+    imageUrl: evogymImg,
   },
 ] as const;
 
