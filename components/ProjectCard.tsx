@@ -57,30 +57,49 @@ export function ProjectCard({
               </CardItem>
             </div>
           </CardItem>
-          <div className="flex justify-between items-center mt-auto">
-            <CardItem
-              translateZ={20}
-              as="button"
-              className="px-4 py-2 rounded-xl text-sm font-bold dark:text-white"
-            >
-              <Link
-                href={url}
-                target="_blank"
-                className="flex items-center underline underline-offset-4 decoration-yellow-400"
+
+          {code ? (
+            <div className="flex justify-between items-center mt-auto">
+              <CardItem
+                translateZ={20}
+                as="button"
+                className="px-4 py-2 rounded-xl text-sm font-bold dark:text-white"
               >
-                Visit <BsArrowRight className="ml-1" />
-              </Link>
-            </CardItem>
-            <CardItem
-              translateZ={20}
-              as="button"
-              className="px-4 py-2 rounded-xl bg-yellow-400 text-black text-sm font-bold"
-            >
-              <Link href={code} target="_blank">
-                Code
-              </Link>
-            </CardItem>
-          </div>
+                <Link
+                  href={url}
+                  target="_blank"
+                  className="flex items-center underline underline-offset-4 decoration-yellow-400"
+                >
+                  Visit <BsArrowRight className="ml-1" />
+                </Link>
+              </CardItem>
+              <CardItem
+                translateZ={20}
+                as="button"
+                className="px-4 py-2 rounded-xl bg-yellow-400 text-black text-sm font-bold"
+              >
+                <Link href={code} target="_blank">
+                  Code
+                </Link>
+              </CardItem>
+            </div>
+          ) : (
+            <div className="flex justify-center items-center mt-auto">
+              <CardItem
+                translateZ={20}
+                as="button"
+                className="px-4 py-2 rounded-xl text-sm font-bold dark:text-white"
+              >
+                <Link
+                  href={url}
+                  target="_blank"
+                  className="flex items-center underline underline-offset-4 decoration-yellow-400"
+                >
+                  Visit <BsArrowRight className="ml-1" />
+                </Link>
+              </CardItem>
+            </div>
+          )}
         </CardBody>
       </CardContainer>
     </section>

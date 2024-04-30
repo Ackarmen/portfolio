@@ -29,7 +29,7 @@ export default function Intro() {
           >
             Hi, i'm Sofiane, a creative and passionate Frontend{' '}
             <span className="underline underline-offset-4 decoration-yellow-400">
-              React (NextJs) developer.
+              React(NextJs) / WordPress developer.
             </span>{' '}
             I simply enjoy being in front of my computer, solving problems, and
             giving my best to provide the best user experience.

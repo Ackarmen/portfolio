@@ -1,3 +1,6 @@
+import dataGencyImg from '@/public/DataAgencyImg.png';
+import seolyImg from '@/public/SeolyImg.png';
+import vexelImg from '@/public/VexelImg.png';
 import aiSummarizerImg from '@/public/aiSummarizer.png';
 import evogymImg from '@/public/evogymImg.png';
 import motorsHubImg from '@/public/motorsHub.png';
@@ -5,6 +8,7 @@ import theGameLibImg from '@/public/theGameLib.png';
 import React from 'react';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { ProjectOptions } from './types';
 
 export const links = [
   {
@@ -76,7 +80,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsData: ProjectOptions[] = [
   {
     id: 1,
     title: 'The Game Lib',
@@ -117,7 +121,34 @@ export const projectsData = [
     tags: ['Vite.js', 'React', 'TypeScript', 'Tailwind'],
     imageUrl: evogymImg,
   },
-] as const;
+  {
+    id: 5,
+    title: 'Vexel',
+    description:
+      'From website design and development to digital marketing and e-commerce solutions, Vexel provide end-to-end services to help your business grow.',
+    url: 'https://dev-vexel.pantheonsite.io/',
+    tags: ['WordPress', 'Elementor'],
+    imageUrl: vexelImg,
+  },
+  {
+    id: 6,
+    title: 'Seoly',
+    description:
+      'SEO agency specializes in helping businesses improve their online visibility and rankings in search engine results. Seoly employ a range of strategies, including keyword research.',
+    url: 'https://dev-seo-ly.pantheonsite.io/',
+    tags: ['WordPress', 'Elementor'],
+    imageUrl: seolyImg,
+  },
+  {
+    id: 7,
+    title: 'Datagency',
+    description:
+      'Datagency is a digital marketing agency that specializes in leveraging data-driven insights to drive effective marketing strategies and campaigns.',
+    url: 'https://dev-wordpress-yt.pantheonsite.io/',
+    tags: ['WordPress', 'Elementor'],
+    imageUrl: dataGencyImg,
+  },
+];
 
 export const skillsData = [
   'JavaScript',
@@ -125,6 +156,7 @@ export const skillsData = [
   'React',
   'Redux',
   'Next.js',
+  'WordPress',
   'Tailwind',
   'Bootstrap',
   'Git/GitHub',
